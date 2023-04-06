@@ -1,0 +1,59 @@
+//slide 88
+
+Av1 = float(input("Digite a nota da Av 1: "))
+Av2 = float(input("Digite a nota da Av 2: "))
+trabalho = float(input("Digite a nota do trabalho: "))
+
+notafinal = round((Av1 + Av2) * 0.7 + trabalho * 0.3) / 2
+
+print("A nota final é:", notafinal)
+
+
+
+// slide 102
+
+inicio = 2
+limite = 100
+razão = 3
+
+n = (limite - inicio) // razão + 1
+
+# Sn = n/2 * (a1 + an)
+somapa = n * (inicio + (inicio + (n - 1) * razão)) / 2
+
+print("O resultado é: ", somapa)
+
+
+
+// slide 105
+
+nestudantes = int(input("Digite o número de estudantes: "))
+notas = []
+
+# Get the grades for each student and add them to the list
+for i in range(nestudantes):
+    nota = float(input(f"Digite a nota por estudante {i+1}: "))
+    notas.append(nota)
+
+# Calculate the average grade
+media = sum(notas) / len(notas)
+
+# Print out the class average
+print(f"A média da turma é: {media:.2f}")
+
+
+// slide 109
+
+
+lista = [0, 2, 4, 6, 8]
+
+for elemento in lista: 
+    print(elemento, end='')
+
+matriz = [[0,1,2], [3,4,5], [6,7,8]]
+
+for listan in matriz:
+    for elemento in listan: 
+        print(elemento, end='') 
+    
+    print()
